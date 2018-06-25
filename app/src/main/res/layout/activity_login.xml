@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.santillanj.rplife_z.Activity.LoginActivity"
+    android:background="@drawable/bg_gradient_bluegreen">
+
+    <ImageView
+        android:id="@+id/mImgLoginLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/img_rp_life_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Fonts.CustomEditText
+        android:id="@+id/mInputUsername"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/login_edittext_style"
+        android:drawableLeft="@drawable/img_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mImgLoginLogo"
+        android:paddingLeft="10dp"
+        android:text="dnaniel_bayot@gmail.com"
+        android:textColor="@color/colorTxtWhite"
+        android:drawableStart="@drawable/img_username"
+        android:paddingStart="10dp"
+        android:textSize="20sp"
+        android:drawablePadding="10dp"/>
+
+    <Fonts.CustomEditText
+        android:inputType="textPassword"
+        android:id="@+id/mInputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_edittext_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mInputUsername"
+        android:drawableLeft="@drawable/img_password"
+        android:paddingLeft="10dp"
+        android:drawableStart="@drawable/img_password"
+        android:paddingStart="10dp"
+        android:text="123456"
+        android:textColor="@color/colorTxtWhite"
+        android:drawablePadding="10dp"
+        android:textSize="20sp"/>
+
+    <Fonts.CustomButton
+        android:id="@+id/mBtnLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_login_style"
+        android:text="Login"
+        android:textColor="@color/colorTxtWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mInputPassword"
+        android:textSize="20sp"
+        android:elevation="5dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/mImgGooglePlus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnLogin"
+        app:srcCompat="@drawable/img_google_plus_icon"
+        android:layout_marginLeft="110dp"
+        android:elevation="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/mImgFacebook"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/mImgTwitter"
+        app:layout_constraintStart_toEndOf="@+id/mImgGooglePlus"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnLogin"
+        app:srcCompat="@drawable/img_facebook_icon"
+        android:elevation="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/mImgTwitter"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnLogin"
+        app:srcCompat="@drawable/img_twitter_icon"
+        android:layout_marginRight="110dp" />
+
+    <Fonts.CustomTextView
+        android:id="@+id/mTxtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Don't Have An Account? Sign Up Now!"
+        android:textColor="@color/colorTxtWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mImgFacebook"
+        app:layout_constraintVertical_bias="0.0"
+        android:elevation="5dp"/>
+</android.support.constraint.ConstraintLayout>
