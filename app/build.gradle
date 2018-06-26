@@ -31,5 +31,9 @@ dependencies {
     //GIF Loader
     implementation 'com.github.adhishlal:gifloader:1.1'
 
+    // Text Gradient
+    implementation 'com.github.lightfire:Android-Gradient-Text-Color:b0047755f7'
+
+
 
 }
