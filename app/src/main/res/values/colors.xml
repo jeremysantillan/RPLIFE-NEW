@@ -7,4 +7,20 @@
     <color name="colorAccent">#fcbf40</color>
     <color name="black_overlay">#66000000</color>
     <color name="colorTxtWhite">#efefef</color>
+
+    <color name="colorTxtElimaStart">#3a1d72</color>
+    <color name="colorTxtElimaEnd">#b74c85</color>
+
+    <color name="colorTxtEruditeStart">#c04d03</color>
+    <color name="colorTxtEruditeEnd">#d69928</color>
+
+    <color name="coloredTxt_1_Start">#923c44</color>
+    <color name="coloredTxt_1_End">#1b6d82</color>
+
+    <color name="coloredTxt_2_Start">#477962</color>
+    <color name="coloredTxt_2_End">#b1244b</color>
+
+    <color name="colorOrangeBtnGraidentStart">#fcbf40</color>
+    <color name="colorOrangeBtnGraidentEnd">#f9690e</color>
+
 </resources>

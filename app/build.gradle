@@ -9,6 +9,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 24
+        renderscriptSupportModeEnabled true
+
     }
     buildTypes {
         release {
@@ -34,6 +37,12 @@ dependencies {
     // Text Gradient
     implementation 'com.github.lightfire:Android-Gradient-Text-Color:b0047755f7'
 
+    //Blur View
+    implementation 'com.wonderkiln:blurkit:1.0.0'
+
+    //Shadow Layout
+    implementation 'com.github.devlight.shadowlayout:library:+'
 
 
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
 }
