@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorTxtWhite"
-    tools:context="com.santillanj.rplife_z.Activity.InitializationActivity">
+    tools:context="Activities.InitializationActivity">
 
     <View
         android:id="@+id/mGradientHeader"
@@ -44,29 +44,24 @@
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
-    <com.wonderkiln.blurkit.BlurLayout
-        android:id="@+id/blurLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:blurRadius="15"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mLayoutHeader">
 
 
         <android.support.constraint.ConstraintLayout
-            android:id="@+id/mLayoutHaderImg"
+            android:id="@+id/mLayoutHeaderImg"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_margin="0dp"
             android:background="@color/colorAccent"
             android:padding="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/mLayoutHeader"
+            >
+
 
             <ImageView
+                android:id="@+id/mImgInitializationHeader"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:padding="0dp"
@@ -77,6 +72,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
 
 
             <ImageView
@@ -96,7 +92,7 @@
                 android:layout_width="0dp"
                 android:layout_height="35dp"
                 android:layout_margin="0dp"
-                android:alpha="0.7"
+                android:alpha="0.4"
                 android:padding="0dp"
                 android:src="@drawable/gradient_black_90"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -104,7 +100,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
         </android.support.constraint.ConstraintLayout>
-    </com.wonderkiln.blurkit.BlurLayout>
+
 
     <com.gigamole.library.ShadowLayout
         android:id="@+id/shadowLayout"
@@ -128,29 +124,26 @@
     <Fonts.CustomGradientTextView
         android:id="@+id/mTxtInitializationName"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:padding="0dp"
         android:text="Elima"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="60sp"
+        android:textSize="80sp"
         app:gradientEnd="@color/colorTxtElimaStart"
         app:gradientStart="@color/colorTxtElimaEnd"
         app:layout_constraintBottom_toBottomOf="@+id/shadowLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/blurLayout"
+        app:layout_constraintTop_toBottomOf="@+id/mLayoutHeaderImg"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="NotSibling" />
 
     <Fonts.CustomTextView
         android:id="@+id/mTxtInitializationDesc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="The Elima show talent in the realms of magic, and have been taught of the Rukh's ways. They believe that magic is the world's salvation. They adapt and gain experience quickly, thus pushing forward in their wise and powerful ways with magic to defeat the Wrizzflygg."
@@ -164,9 +157,9 @@
     <ImageView
         android:id="@+id/mGradient90_footer"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_margin="0dp"
-        android:alpha="0.7"
+        android:alpha="0.5"
         android:padding="0dp"
         android:src="@drawable/gradient_black_90"
         app:layout_constraintBottom_toTopOf="@id/mBtnSelectType"
@@ -203,7 +196,8 @@
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="@id/mGradient90_footer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+   />
 
 
 </android.support.constraint.ConstraintLayout>

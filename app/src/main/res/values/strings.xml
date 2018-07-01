@@ -4,4 +4,12 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="type_elima">type_elima</string>
+    <string name="type_erudite">type_erudite</string>
+    <string name="type_locked_1">type_locked_1</string>
+    <string name="type_locked_2">type_locked_2</string>
+    <string name="type_locked_3">type_locked_3</string>
+
+
 </resources>

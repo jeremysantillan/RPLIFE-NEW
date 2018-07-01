@@ -20,6 +20,9 @@
     <color name="coloredTxt_2_Start">#477962</color>
     <color name="coloredTxt_2_End">#b1244b</color>
 
+    <color name="coloredTxt_3_Start">#010f9c</color>
+    <color name="coloredTxt_3_End">#b10000</color>
+
     <color name="colorOrangeBtnGraidentStart">#fcbf40</color>
     <color name="colorOrangeBtnGraidentEnd">#f9690e</color>
 

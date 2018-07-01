@@ -1,4 +1,4 @@
-package com.santillanj.rplife_z.Activity;
+package Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
