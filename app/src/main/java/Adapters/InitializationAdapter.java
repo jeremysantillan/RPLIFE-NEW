@@ -7,12 +7,17 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.santillanj.rplife_z.R;
 
 import java.util.List;
+
+import Interfaces.InitializationRecyclerListener;
+import Models.InitializationType;
 
 
 /**
@@ -23,18 +28,15 @@ public class InitializationAdapter extends RecyclerView.Adapter<InitializationAd
 
     private Context context;
     private InitializationAdapter.ViewHolder viewHolder;
-    private List<String> initTypeList;
+    private List<InitializationType> initTypeList;
+    private InitializationRecyclerListener typeInterface;
 
     public static final String TAG = "INITADAPTER";
 
-
-    public InitializationAdapter(List<String> initTypeList) {
+    public InitializationAdapter(List<InitializationType> initTypeList, InitializationRecyclerListener typeInterface) {
         this.initTypeList = initTypeList;
+        this.typeInterface = typeInterface;
     }
-
-
-
-
 
     @Override
     public InitializationAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -46,40 +48,18 @@ public class InitializationAdapter extends RecyclerView.Adapter<InitializationAd
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        final String itemType= initTypeList.get(position);
-        Log.d(TAG, "onBindViewHolder: POSITION "+position+"  "+itemType);
+    public void onBindViewHolder(ViewHolder holder, final int position) {
+        final InitializationType itemType = initTypeList.get(position);
+        Log.d(TAG, "onBindViewHolder: POSITION " + position + "  " + itemType.getTypeName());
+        Glide.with(holder.mImgInitType.getContext()).load(itemType.getTypeImgID()).into(holder.mImgInitType);
 
-
-
-        if(itemType!=null){
-            switch (itemType){
-                case "type_elima":
-                    Log.d(TAG,"TYPE_ELIMA");
-                    Glide.with(holder.mImgInitType.getContext()).load(R.drawable.img_elima_logo_new).into(holder.mImgInitType);
-                    break;
-                case "type_erudite":
-                    Log.d(TAG,"TYPE_ERUDITE");
-                    Glide.with(holder.mImgInitType.getContext()).load(R.drawable.img_erudite_logo_new).into(holder.mImgInitType);
-                    break;
-                case "type_locked_1":
-                    Log.d(TAG,"TYPE_LOCKED_1");
-                    Glide.with(holder.mImgInitType.getContext()).load(R.drawable.img_initialization_locked_1).into(holder.mImgInitType);
-                    break;
-                case "type_locked_2":
-                    Log.d(TAG,"TYPE_LOCKED_2");
-                    Glide.with(holder.mImgInitType.getContext()).load(R.drawable.img_initialization_locked_2).into(holder.mImgInitType);
-                    break;
-                case "type_locked_3":
-                    Log.d(TAG,"TYPE_LOCKED_3");
-                    Glide.with(holder.mImgInitType.getContext()).load(R.drawable.img_initialization_locked_3).into(holder.mImgInitType);
-                    break;
-                default:
-                    Log.d(TAG,"TYPE_LOCKED");
-                    Glide.with(holder.mImgInitType.getContext()).load(R.drawable.img_initialization_locked_3).into(holder.mImgInitType);
-                    break;
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onClick: POSITION "+position);
+                typeInterface.onInitRecyclerItemClick(initTypeList.get(position));
             }
-        }
+        });
 
     }
 
@@ -90,14 +70,9 @@ public class InitializationAdapter extends RecyclerView.Adapter<InitializationAd
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView mImgInitType;
-
         public ViewHolder(View itemView) {
             super(itemView);
             mImgInitType = itemView.findViewById(R.id.mImgInitTypeLogo);
         }
-
-
-
-
     }
 }
