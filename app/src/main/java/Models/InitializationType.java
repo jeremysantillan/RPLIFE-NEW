@@ -8,12 +8,15 @@ public class InitializationType {
     private String typeName;
     private String typeDesc;
     private int typeImgID;
+    private int colorStart;
+    private int colorEnd;
 
-    public InitializationType(String typeName, String typeDesc, int typeImgID) {
+    public InitializationType(String typeName, String typeDesc, int typeImgID, int colorStart, int colorEnd) {
         this.typeName = typeName;
         this.typeDesc = typeDesc;
         this.typeImgID = typeImgID;
-
+        this.colorStart = colorStart;
+        this.colorEnd = colorEnd;
     }
 
     public String getTypeName() {
@@ -40,4 +43,19 @@ public class InitializationType {
         this.typeImgID = typeImgID;
     }
 
+    public int getColorStart() {
+        return colorStart;
+    }
+
+    public void setColorStart(int colorStart) {
+        this.colorStart = colorStart;
+    }
+
+    public int getColorEnd() {
+        return colorEnd;
+    }
+
+    public void setColorEnd(int colorEnd) {
+        this.colorEnd = colorEnd;
+    }
 }

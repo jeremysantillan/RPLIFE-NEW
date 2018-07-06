@@ -14,14 +14,14 @@
     <color name="colorTxtEruditeStart">#c04d03</color>
     <color name="colorTxtEruditeEnd">#d69928</color>
 
-    <color name="coloredTxt_1_Start">#923c44</color>
+    <color name="coloredTxt_1_Start">#77256b</color>
     <color name="coloredTxt_1_End">#1b6d82</color>
 
     <color name="coloredTxt_2_Start">#477962</color>
     <color name="coloredTxt_2_End">#b1244b</color>
 
-    <color name="coloredTxt_3_Start">#010f9c</color>
-    <color name="coloredTxt_3_End">#b10000</color>
+    <color name="coloredTxt_3_Start">#055e85</color>
+    <color name="coloredTxt_3_End">#448943</color>
 
     <color name="colorOrangeBtnGraidentStart">#fcbf40</color>
     <color name="colorOrangeBtnGraidentEnd">#f9690e</color>

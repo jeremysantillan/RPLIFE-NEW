@@ -37,7 +37,7 @@
             android:textSize="45sp"
             android:textStyle="bold"
             app:gradientEnd="@color/colorPrimaryLight"
-            app:gradientStart="@color/colorPrimaryDark"
+            app:gradientStart="@color/colorPrimaryMid"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,14 +51,13 @@
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_margin="0dp"
-            android:background="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
             android:padding="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/mLayoutHeader"
             >
-
 
             <ImageView
                 android:id="@+id/mImgInitializationHeader"
@@ -102,26 +101,28 @@
         </android.support.constraint.ConstraintLayout>
 
 
-    <com.gigamole.library.ShadowLayout
-        android:id="@+id/shadowLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <android.support.v7.widget.CardView
+        android:id="@+id/mCardIntTypeLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mLayoutHeader"
-        app:sl_shadow_angle="90"
-        app:sl_shadow_color="#40000000"
-        app:sl_shadow_distance="15dp"
-        app:sl_shadow_radius="15dp"
-        app:sl_shadowed="true">
-
+        app:layout_constraintTop_toTopOf="@+id/mLayoutHeaderImg"
+        android:layout_marginRight="16dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
         <ImageView
             android:id="@+id/mImgInitializationLogo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:src="@drawable/img_elima_logo_new" />
-    </com.gigamole.library.ShadowLayout>
+    </android.support.v7.widget.CardView>
 
-    <Fonts.CustomGradientTextView
+
+
+    <Fonts.CustomTextView
         android:id="@+id/mTxtInitializationName"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
@@ -131,9 +132,7 @@
         android:text="Elima"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="80sp"
-        app:gradientEnd="@color/colorTxtElimaStart"
-        app:gradientStart="@color/colorTxtElimaEnd"
-        app:layout_constraintBottom_toBottomOf="@+id/shadowLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/mCardIntTypeLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mLayoutHeaderImg"
         app:layout_constraintVertical_bias="0.0"
