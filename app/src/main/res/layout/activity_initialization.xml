@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorTxtWhite"
-    tools:context="Activities.InitializationActivity">
+    tools:context="com.santillanj.rplife_z.Activities.InitializationActivity">
 
     <View
         android:id="@+id/mGradientHeader"
@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mGradientHeader">
 
-        <Fonts.CustomGradientTextView
+        <com.santillanj.rplife_z.Fonts.CustomGradientTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -122,7 +122,7 @@
 
 
 
-    <Fonts.CustomTextView
+    <com.santillanj.rplife_z.Fonts.CustomTextView
         android:id="@+id/mTxtInitializationName"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
@@ -139,7 +139,7 @@
         tools:ignore="NotSibling"
         android:layout_marginLeft="16dp" />
 
-    <Fonts.CustomTextView
+    <com.santillanj.rplife_z.Fonts.CustomTextView
         android:id="@+id/mTxtInitializationDesc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Fonts.CustomButton
+    <com.santillanj.rplife_z.Fonts.CustomButton
         android:id="@+id/mBtnSelectType"
         android:layout_width="0dp"
         android:layout_height="54dp"

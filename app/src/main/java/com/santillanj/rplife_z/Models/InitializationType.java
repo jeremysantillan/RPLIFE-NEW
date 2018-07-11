@@ -1,4 +1,4 @@
-package Models;
+package com.santillanj.rplife_z.Models;
 
 /**
  * Created by Jeremy on 7/3/2018.

@@ -1,14 +1,11 @@
-package Adapters;
+package com.santillanj.rplife_z.Adapters;
 
 import android.content.Context;
-import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -16,8 +13,8 @@ import com.santillanj.rplife_z.R;
 
 import java.util.List;
 
-import Interfaces.InitializationRecyclerListener;
-import Models.InitializationType;
+import com.santillanj.rplife_z.Interfaces.InitializationRecyclerListener;
+import com.santillanj.rplife_z.Models.InitializationType;
 
 
 /**

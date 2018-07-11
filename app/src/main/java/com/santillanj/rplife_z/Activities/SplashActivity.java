@@ -1,4 +1,4 @@
-package Activities;
+package com.santillanj.rplife_z.Activities;
 
 import android.content.Intent;
 import android.os.Handler;

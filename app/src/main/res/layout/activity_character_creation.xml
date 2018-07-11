@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.santillanj.rplife_z.Activities.CharacterCreationActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mCharScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="264dp" />
+
+
+    <View
+        android:id="@+id/mGradientFooter"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@drawable/header_gradient_bluegreen"
+        app:layout_constraintBottom_toTopOf="@+id/mBtnSaveCharacter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    <com.santillanj.rplife_z.Fonts.CustomButton
+        android:id="@+id/mBtnSaveCharacter"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:background="@drawable/btn_orange_style"
+        android:elevation="0dp"
+        android:padding="0dp"
+        android:text="Save Character"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,6 +1,6 @@
-package Interfaces;
+package com.santillanj.rplife_z.Interfaces;
 
-import Models.InitializationType;
+import com.santillanj.rplife_z.Models.InitializationType;
 
 /**
  * Created by Jeremy on 7/3/2018.

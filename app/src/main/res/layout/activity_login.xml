@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Activities.LoginActivity"
+    tools:context="com.santillanj.rplife_z.Activities.LoginActivity"
     android:background="@drawable/bg_gradient_bluegreen">
 
     <ImageView
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Fonts.CustomEditText
+    <com.santillanj.rplife_z.Fonts.CustomEditText
         android:id="@+id/mInputUsername"
         android:layout_width="match_parent"
         android:layout_height="57dp"
@@ -39,7 +39,7 @@
         android:textSize="20sp"
         android:drawablePadding="10dp"/>
 
-    <Fonts.CustomEditText
+    <com.santillanj.rplife_z.Fonts.CustomEditText
         android:inputType="textPassword"
         android:id="@+id/mInputPassword"
         android:layout_width="match_parent"
@@ -60,7 +60,7 @@
         android:drawablePadding="10dp"
         android:textSize="20sp"/>
 
-    <Fonts.CustomButton
+    <com.santillanj.rplife_z.Fonts.CustomButton
         android:id="@+id/mBtnLogin"
         android:layout_width="0dp"
         android:layout_height="50dp"
@@ -116,7 +116,7 @@
         app:srcCompat="@drawable/img_twitter_icon"
         android:layout_marginRight="110dp" />
 
-    <Fonts.CustomTextView
+    <com.santillanj.rplife_z.Fonts.CustomTextView
         android:id="@+id/mTxtSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="Activities.MainActivity"
+            android:name="com.santillanj.rplife_z.Activities.MainActivity"
             android:label=" "
             android:screenOrientation="portrait" />
-        <activity android:name="Activities.SplashActivity">
+        <activity android:name="com.santillanj.rplife_z.Activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,14 +21,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="Activities.LoginActivity"
+            android:name="com.santillanj.rplife_z.Activities.LoginActivity"
             android:label=" "
             android:screenOrientation="portrait"
             android:theme="@style/TransparentStatusBar" />
-        <activity android:name="Activities.InitializationActivity"
+        <activity
+            android:name="com.santillanj.rplife_z.Activities.InitializationActivity"
             android:label=" "
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Activities.CharacterCreationActivity"></activity>
     </application>
 
 </manifest>

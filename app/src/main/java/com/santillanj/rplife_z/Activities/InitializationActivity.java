@@ -1,8 +1,6 @@
-package Activities;
+package com.santillanj.rplife_z.Activities;
 
-import android.arch.lifecycle.GenericLifecycleObserver;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
 import android.os.Handler;
@@ -13,26 +11,23 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.AnimationUtils;
-import android.view.animation.LayoutAnimationController;
 import android.widget.Button;
-import android.widget.CursorAdapter;
 import android.widget.ImageView;
 
 import com.bumptech.glide.GenericTransitionOptions;
 import com.bumptech.glide.Glide;
 import com.jackandphantom.blurimage.BlurImage;
+import com.santillanj.rplife_z.Models.CharacterParts;
 import com.santillanj.rplife_z.R;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-import Adapters.InitializationAdapter;
-import Fonts.CustomGradientTextView;
-import Fonts.CustomTextView;
-import Interfaces.InitializationRecyclerListener;
-import Models.InitializationType;
+import com.santillanj.rplife_z.Adapters.InitializationAdapter;
+import com.santillanj.rplife_z.Fonts.CustomTextView;
+import com.santillanj.rplife_z.Interfaces.InitializationRecyclerListener;
+import com.santillanj.rplife_z.Models.InitializationType;
 
-public class InitializationActivity extends AppCompatActivity implements InitializationRecyclerListener {
+public class InitializationActivity extends AppCompatActivity implements InitializationRecyclerListener, View.OnClickListener {
 
     private ImageView mImgInitTypeLogo;
     private ImageView mImgInitTypeHeader;
@@ -55,6 +50,7 @@ public class InitializationActivity extends AppCompatActivity implements Initial
         mTxtInitTypeName = findViewById(R.id.mTxtInitializationName);
         mTxtInitTypeDesc = findViewById(R.id.mTxtInitializationDesc);
         mBtnSelectType = findViewById(R.id.mBtnSelectType);
+        mBtnSelectType.setOnClickListener(this);
         mRecyclerInitTypes = findViewById(R.id.mRecyclerInitialization);
 
         //initial logo
@@ -109,4 +105,12 @@ public class InitializationActivity extends AppCompatActivity implements Initial
     }
 
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.mBtnSelectType:
+                startActivity(new Intent(InitializationActivity.this, CharacterCreationActivity.class));
+                break;
+        }
+    }
 }
