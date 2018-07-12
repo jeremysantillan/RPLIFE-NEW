@@ -15,7 +15,6 @@
     <string name="type_erudite_name">Erudite</string>
     <string name="type_locked_name">Locked</string>
 
-
     <string name="type_elima_desc">The Elima show talent in the realms of magic, and have been taught of the Rukh\'s ways. They believe that magic is the world\'s salvation. They adapt and gain experience quickly, thus pushing forward in their wise and powerful ways with magic to defeat the Wrizzflygg.</string>
     <string name="type_erudite_desc">The Erudite are a faction known to possess superior Intelligence. They believe that Technology is the best way towards their ultimate goal of renewing and retaking Earth. With their knack of earning gold faster, they push through with stronger and powerful equipment to fight against the Wrizzflygg.</string>
     <string name="type_locked_desc">This item is locked.</string>
@@ -24,6 +23,18 @@
     <string name="type_char_hair">Hair</string>
     <string name="type_char_body">Body</string>
     <string name="type_char_clothes">Clothes</string>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

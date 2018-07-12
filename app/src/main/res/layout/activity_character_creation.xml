@@ -6,14 +6,33 @@
     android:layout_height="match_parent"
     tools:context="com.santillanj.rplife_z.Activities.CharacterCreationActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/mCharScrollView"
+    <com.santillanj.rplife_z.Adapters.CustomViewPager
+        android:id="@+id/mCharViewPager"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/mNavTabStrip"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.gigamole.navigationtabstrip.NavigationTabStrip
+        android:id="@+id/mNavTabStrip"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/mGradientFooter"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="264dp" />
+        app:nts_active_color="@color/colorOrangeBtnGraidentStart"
+        app:nts_color="@color/colorOrangeBtnGraidentEnd"
+        app:nts_corners_radius="3.5dp"
+        app:nts_factor="2"
+        app:nts_gravity="bottom"
+        app:nts_inactive_color="@color/colorTxtWhite"
+        app:nts_type="point"
+        app:nts_typeface="fonts/BebasNeue.otf"
+        app:nts_weight="4dp" />
+
 
 
     <View
@@ -41,7 +60,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/colorTxtWhite"/>
 
 
 </android.support.constraint.ConstraintLayout>

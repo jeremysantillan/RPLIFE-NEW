@@ -55,4 +55,7 @@ dependencies {
 
     //carousel recycler view
     implementation 'com.azoft.carousellayoutmanager:carousel:1.2.4'
+
+    //Navigation Tab Strip
+    compile 'com.github.devlight.navigationtabstrip:navigationtabstrip:1.0.4'
 }
